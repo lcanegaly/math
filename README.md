@@ -1,2 +1,2 @@
 # math
-A basic library for vector and matrix math operations
+A work in-progress template library for vector (and eventually matrix operations).
