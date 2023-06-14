@@ -1,6 +1,6 @@
 #ifndef LC_MATH_VECTOR_H
 #define LC_MATH_VECTOR_H
-
+#include <iostream>
 // A basic 2 component vector type
 template<typename T>
 struct Type_Vec2 {
@@ -23,6 +23,12 @@ struct Type_Vec2 {
   T x;
   T y;
 };
+
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const Type_Vec2<T>& v){
+    os << v.x << "," << v.y << "\n";
+    return os;
+}
 
 // Floating point and Int vector types
 typedef double FloatType;
