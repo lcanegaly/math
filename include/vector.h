@@ -10,9 +10,15 @@ struct Type_Vec2 {
   Type_Vec2 operator-(const Type_Vec2& other){
     return Type_Vec2{x - other.x, y - other.y};
   }  
-  void operator=(const Type_Vec2& other) {
+  Type_Vec2 operator=(const Type_Vec2& other) {
     x = other.x;
     y = other.y;
+    return Type_Vec2(x,y); 
+  }
+  Type_Vec2 operator+(const Type_Vec2& other) {
+    x += other.x;
+    y += other.y;
+    return Type_Vec2(x,y);
   }
   T x;
   T y;
