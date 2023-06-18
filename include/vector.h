@@ -31,7 +31,7 @@ std::ostream& operator<<(std::ostream& os, const Type_Vec2<T>& v){
 }
 
 // Floating point and Int vector types
-typedef double FloatType;
+typedef float FloatType;
 typedef Type_Vec2<FloatType> Vec2;
 
 typedef int IntType;
